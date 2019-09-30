@@ -273,3 +273,24 @@ footer .copyright {
 	margin: 2em auto;
 	width: 200px;
 }
+
+footer .itembox {
+	width: 415px;
+/*	padding: 20px;*/
+	margin: 20px 0;
+
+	display: flex;
+	flex-flow: column wrap;
+}
+
+footer .itembox ul {
+	list-style-type: square;
+	padding: 20px;
+}
+footer .itembox ul li {
+	padding: 7px;
+}
+
+footer .services-info-img {
+	width: 415px;
+}
