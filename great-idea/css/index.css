@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +64,164 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+	width: 876px;
+	margin: auto;
+}
+
+
+/*The header and sub header banner area*/
+header {
+	padding: 0 0 50px 0;
+	border-bottom: 1px solid black;
+}
+
+header .floatnav {
+	position: fixed;
+	top: 0;
+	background: white;
+	width: 876px;
+	display: flex;
+}
+
+nav {
+	width: 876px;
+	display: flex;
+	justify-content: space-between;
+	margin: 35px 0px;
+	padding-right: 85px;
+}
+
+nav a {
+	color: silver;
+/*	margin: 35px 40px 35px 0px;*/
+	padding: 10px;
+	box-sizing: border-box;
+/*	display: inline-block;*/
+	text-decoration: none;
+	font-size: 14px;
+	text-shadow: 2px 1px white;
+	border: 1px solid white;
+}
+
+nav a:hover {
+	background: #e1eced;
+	color: #18CAE6;
+	text-shadow: 2px 1px white;
+	border: 1px solid #18CAE6;
+}
+
+.logo {
+/*	float: right;*/
+	margin: 30px 0px;
+}
+
+.subheader {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	margin: 125px 0 0 0
+}
+
+.subheader div {
+	width: 300px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+
+	margin: 70px 85px 50px 120px;
+/*
+	display: inline-block;
+
+	text-align: center;
+	font-size: 78px;*/
+}
+.subheader div h1 {
+	font-size: 78px;
+}
+
+.subheader div p {
+	font-size: 18px;
+	border: 1px solid black;
+	padding: 6px 35px;
+/*	padding: 6px 25px;
+	margin: 0px;
+	display: block;
+	should use this and a "span" but as you want "inline-block" only using a <p>
+	width: 155px;*/
+	box-sizing: border-box;
+}
+
+.subheader div a {
+	text-decoration: none;
+	color: black;
+}
+
+.subheader div p:hover {
+	background: #e1eced;
+	color: #18CAE6;
+	text-shadow: 2px 1px white;
+	border: 1px solid #18CAE6;
+}
+
+/*main content*/
+.area1 a, .area2 a {
+	color: black;
+	text-decoration: none;
+}
+.area1 a:hover, .area2 a:hover {
+	color: #18CAE6;
+	text-shadow: 1px 1px silver;
+}
+
+.area1 {
+	display: flex;
+}
+
+.area1 div {
+	margin: 30px 0px;
+	/*	display: inline-block;
+	width: 436px;
+	box-sizing: border-box;
+	margin: 30px 0px;*/
+}
+
+.area2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.area2 div {
+	margin: 30px 0px;
+	width: 288px;
+/*	display: inline-block;
+
+	box-sizing: border-box;
+*/
+}
+
+/*Footer*/
+footer {
+	display: flex;
+	flex-flow: column;
+
+	margin: 20px 0px
+	border-top: 1px solid black;
+/*
+	padding: 30px 0px;
+	*/
+}
+
+footer address {
+	width: 175px;
+}
+
+footer address span {
+	margin: 1em 0 0 0;
+/*	display: inline-block;*/
+}
+
+footer .copyright {
+	margin: 2em auto;
+	width: 200px;
+}
