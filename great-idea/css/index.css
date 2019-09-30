@@ -275,19 +275,25 @@ footer .copyright {
 }
 
 footer .itembox {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+footer .itembox .arealeft {
 	width: 415px;
 /*	padding: 20px;*/
-	margin: 20px 0;
+	margin: 40px 0;
 
 	display: flex;
 	flex-flow: column wrap;
 }
 
-footer .itembox ul {
+footer .itembox .arealeft ul {
 	list-style-type: square;
 	padding: 20px;
 }
-footer .itembox ul li {
+footer .itembox .arealeft ul li {
 	padding: 7px;
 }
 
