@@ -72,7 +72,7 @@ body {
 
 /*The header and sub header banner area*/
 header {
-	padding: 0 0 50px 0;
+	padding: 0 0 40px 0;
 	border-bottom: 1px solid black;
 }
 
@@ -82,6 +82,16 @@ header .floatnav {
 	background: white;
 	width: 876px;
 	display: flex;
+}
+
+header .services-header-img {
+	margin: 107px 0 0 0;
+	width: 876px;
+}
+
+header h1 {
+	font-size: 30px;
+	margin: 25px 0 15px 0;
 }
 
 nav {
@@ -120,7 +130,7 @@ nav a:hover {
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
-	margin: 125px 0 0 0
+	margin: 125px 0 0 0;
 }
 
 .subheader div {
@@ -164,6 +174,9 @@ nav a:hover {
 	border: 1px solid #18CAE6;
 }
 
+
+
+
 /*main content*/
 .area1 a, .area2 a {
 	color: black;
@@ -186,6 +199,11 @@ nav a:hover {
 	margin: 30px 0px;*/
 }
 
+.area1 .itembox {
+	border: 1px solid black;
+	width: 450px;
+}
+
 .area2 {
 	display: flex;
 	justify-content: space-between;
@@ -200,12 +218,42 @@ nav a:hover {
 */
 }
 
+.area3 {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	padding: 20px 0 0 0;
+}
+
+.area3 .itembox {
+	background: #f4f3f4;
+	border: 1px solid black;
+	width: 415px;
+	padding: 20px;
+	margin: 20px 0;
+
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.area3 .itembox span {
+	border: 1px solid black;
+	border-radius: 5px;
+	background: white;
+	color: black;
+	padding: 8px;
+	margin-top: 20px;
+	width: 120px;
+	font-size: 0.75em;
+	text-align: center;
+}
+
 /*Footer*/
 footer {
 	display: flex;
 	flex-flow: column;
 
-	margin: 20px 0px
+	margin: 20px 0px;
 	border-top: 1px solid black;
 /*
 	padding: 30px 0px;
