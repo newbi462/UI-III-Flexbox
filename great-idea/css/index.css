@@ -224,14 +224,15 @@ nav a:hover {
 	flex-flow: wrap;
 	justify-content: space-between;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {/*wont work with chrome?*/
 	.area3 {
 		display: flex;
 		flex-flow: column wrap;
+		justify-content: center;/*wont center*/
   }
-	.area3 .itembox {
+	.area3 .itembox {/*wont kick in right?*/
 		width: 85%;
-		margin: 20px auto;
+		margin: 20px auto;/*wont center*/
 	}
 }
 
@@ -311,7 +312,7 @@ footer .itembox {
 		margin: 20px auto;
 		width: 85%;
 	}
-	footer .services-info-img {
+	footer .services-info-img {/*wont kick in right?*/
 		margin: 20px auto;
 		width: 85%;
 	}
