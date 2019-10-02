@@ -148,6 +148,7 @@ nav a:hover {
 }
 .subheader div h1 {
 	font-size: 78px;
+	text-align: center;/*feels like cheating but I have no other way to make this work*/
 }
 
 .subheader div p {
@@ -269,21 +270,26 @@ nav a:hover {
 footer {
 	display: flex;
 	flex-flow: column;
+	align-content: space-between;
 
 	margin: 20px 0px;
 	border-top: 1px solid black;
-/*
+
 	padding: 30px 0px;
-	*/
+/*	*/
 }
 
 footer address {
 	width: 175px;
+
+	display: flex;
+	flex-flow: column;
+	align-content: space-between;
 }
 
 footer address span {
-	margin: 1em 0 0 0;
-/*	display: inline-block;*/
+	margin: 1em 0 0 0; /*WOPULD NOT RESPECT THIS MARGIN
+	display: inline-block;*/
 }
 
 footer .copyright {
@@ -318,7 +324,7 @@ footer .itembox {
 footer .itembox .arealeft {
 	width: 415px;
 /*	padding: 20px;*/
-	margin: 40px 0;
+	margin: 10px 0 40px 0;
 
 	display: flex;
 	flex-flow: column wrap;
@@ -334,5 +340,5 @@ footer .itembox .arealeft ul li {
 
 footer .services-info-img {
 	width: 415px;
-	margin: 40px 0;
+	margin: 10px 0 40px 0;
 }
