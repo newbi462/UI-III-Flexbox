@@ -222,7 +222,16 @@ nav a:hover {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-between;
-	padding: 20px 0 0 0;
+}
+@media screen and (max-width: 500px) {
+	.area3 {
+		display: flex;
+		flex-flow: column wrap;
+  }
+	.area3 .itembox {
+		width: 85%;
+		margin: 20px auto;
+	}
 }
 
 .area3 .itembox {
@@ -230,13 +239,14 @@ nav a:hover {
 	border: 1px solid black;
 	width: 415px;
 	padding: 20px;
-	margin: 20px 0;
+	margin: 20px 0;/*this 0 is over riding my responsinve*/
 
 	display: flex;
 	flex-flow: column wrap;
 }
 
-.area3 .itembox span {
+
+.area3 .itembox a {
 	border: 1px solid black;
 	border-radius: 5px;
 	background: white;
@@ -246,6 +256,13 @@ nav a:hover {
 	width: 120px;
 	font-size: 0.75em;
 	text-align: center;
+	text-decoration: none;
+}
+
+.area3 .itembox a:hover {
+	border: 1px solid #18CAE6;
+	color: #18CAE6;
+	text-shadow: 1px 1px silver;
 }
 
 /*Footer*/
@@ -278,6 +295,24 @@ footer .itembox {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+	footer .itembox {
+		display: flex;
+		flex-flow: column wrap;
+  }
+	footer .itembox .arealeft {
+		margin: 20px auto;
+		width: 85%;
+	}
+	footer .services-info-img {
+		margin: 20px auto;
+		width: 85%;
+	}
+	body{
+    width: 100%;
+		margin: 0 auto;
+	}
 }
 
 footer .itembox .arealeft {
