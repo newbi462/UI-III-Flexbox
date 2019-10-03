@@ -224,17 +224,7 @@ nav a:hover {
 	flex-flow: wrap;
 	justify-content: space-between;
 }
-@media screen and (max-width: 500px) {/*wont work with chrome?*/
-	.area3 {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;/*wont center*/
-  }
-	.area3 .itembox {/*wont kick in right?*/
-		width: 85%;
-		margin: 20px auto;/*wont center*/
-	}
-}
+
 
 .area3 .itembox {
 	background: #f4f3f4;
@@ -247,6 +237,17 @@ nav a:hover {
 	flex-flow: column wrap;
 }
 
+@media screen and (max-width: 500px) {/*wont work with chrome?*/
+	.area3 {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;/*wont center*/
+  }
+	.area3 .itembox {/*wont kick in right?*/
+		width: 85%;
+		margin: 20px auto;/*wont center*/
+	}
+}
 
 .area3 .itembox a {
 	border: 1px solid black;
@@ -303,24 +304,6 @@ footer .itembox {
 	flex-flow: wrap;
 	justify-content: space-between;
 }
-@media only screen and (max-width: 500px) {
-	footer .itembox {
-		display: flex;
-		flex-flow: column wrap;
-  }
-	footer .itembox .arealeft {
-		margin: 20px auto;
-		width: 85%;
-	}
-	footer .services-info-img {/*wont kick in right?*/
-		margin: 20px auto;
-		width: 85%;
-	}
-	body{
-    width: 100%;
-		margin: 0 auto;
-	}
-}
 
 footer .itembox .arealeft {
 	width: 415px;
@@ -342,4 +325,23 @@ footer .itembox .arealeft ul li {
 footer .services-info-img {
 	width: 415px;
 	margin: 10px 0 40px 0;
+}
+
+@media only screen and (max-width: 500px) {
+	footer .itembox {
+		display: flex;
+		flex-flow: column wrap;
+  }
+	footer .itembox .arealeft {
+		margin: 20px auto;
+		width: 85%;
+	}
+	footer .services-info-img {/*wont kick in right?*/
+		margin: 20px auto;
+		width: 85%;
+	}
+	body{
+    width: 100%;
+		margin: 0 auto;
+	}
 }
